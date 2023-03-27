@@ -1,100 +1,30 @@
+{% extends 'core/base.html' %}
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-  <head>
+{% block title %} Inicio {% endblock title %}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+{% block content %}
 
-    <title>Sixteen Clothing HTML Template</title>
+<!-- Banner Starts Here -->
+    
+    <a href="#" class="boton-scroll">
+      <i class="material-icons">keyboard_arrow_up</i>
+    </a>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-<!--
-
-TemplateMo 546 Sixteen Clothing
-
-https://templatemo.com/tm-546-sixteen-clothing
-
--->
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{% static 'core/css/fontawesome.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/templatemo-sixteen.css' %}">
-    <link rel="stylesheet" href="{% static 'core/css/owl.css' %}">
-
-  </head>
-
-  <body>
-
-    {% comment %} <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** --> {% endcomment %}
-
-    <!-- Header -->
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Success <em>Mindset</em></h2></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Our Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-          <div class="text-content">
-            <h4>Best Offer</h4>
-            <h2>New Arrivals On Sale</h2>
-          </div>
-        </div>
-        <div class="banner-item-02">
-          <div class="text-content">
-            <h4>Flash Deals</h4>
-            <h2>Get your best products</h2>
-          </div>
-        </div>
-        <div class="banner-item-03">
-          <div class="text-content">
-            <h4>Last Minute</h4>
-            <h2>Grab last minute deals</h2>
+    <div class="page-heading contact-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-content">
+              <h4>BIENVENIDO</h4>
+              <h2>Transforma tu vida con los mejores libros</h2>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Banner Ends Here -->
 
     <div class="latest-products">
@@ -102,10 +32,12 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>Latest Products</h2>
-              <a href="products.html">view all products <i class="fa fa-angle-right"></i></a>
+              <h2>Las publicaciones mas recientes</h2>
+              <a href="products.html">ver todas <i class="fa fa-angle-right"></i></a>
             </div>
           </div>
+          
+          <!-- Publicacion -->
           <div class="col-md-4">
             <div class="product-item">
               <a href="#"><img src="{% static 'core/images/product_01.jpg' %}" alt=""></a>
@@ -124,6 +56,8 @@ https://templatemo.com/tm-546-sixteen-clothing
               </div>
             </div>
           </div>
+          <!-- End publicacion -->
+
           <div class="col-md-4">
             <div class="product-item">
               <a href="#"><img src="{% static 'core/images/product_02.jpg' %}" alt=""></a>
@@ -214,6 +148,7 @@ https://templatemo.com/tm-546-sixteen-clothing
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -223,21 +158,21 @@ https://templatemo.com/tm-546-sixteen-clothing
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <h2>About Sixteen Clothing</h2>
+              <h2>Sobre success mindset</h2>
             </div>
           </div>
           <div class="col-md-6">
             <div class="left-content">
-              <h4>Looking for the best products?</h4>
-              <p><a rel="nofollow" href="https://templatemo.com/tm-546-sixteen-clothing" target="_parent">This template</a> is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website. <a rel="nofollow" href="https://templatemo.com/contact">Contact us</a> for more info.</p>
+              <h4>Estas buscando libros de desarrollo personal?</h4>
+              <p><a rel="nofollow" href="" target="_parent">Success Mindset</a> es una pagina de compra-venta de libros enfocados al desarrollo personal, que tiene como objetivo ayudar a las personas a desarrollar una mentalidad de éxito y lograr sus metas y objetivos en la vida a traves de la lectura. <a rel="nofollow" href="">Contactanos</a> para recibir mas informacion.</p>
               <ul class="featured-list">
-                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li><a href="#">Consectetur an adipisicing elit</a></li>
-                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
-                <li><a href="#">Corporis, omnis doloremque</a></li>
-                <li><a href="#">Non cum id reprehenderit</a></li>
+                <li><a href="#">Desarrollo personal</a></li>
+                <li><a href="#">Liderazgo</a></li>
+                <li><a href="#">Riqueza</a></li>
+                <li><a href="#">Emprendimiento</a></li>
+                <li><a href="#">Analisis tecnico & Trading</a></li>
               </ul>
-              <a href="about.html" class="filled-button">Read More</a>
+              <a href="about.html" class="filled-button">Leer mas</a>
             </div>
           </div>
           <div class="col-md-6">
@@ -257,11 +192,11 @@ https://templatemo.com/tm-546-sixteen-clothing
             <div class="inner-content">
               <div class="row">
                 <div class="col-md-8">
-                  <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                  <h4>Estamos <em>con vos.</em></h4>
+                  <p>En SUCCESS MINDSET estamos comprometidos con tu desarrollo. Traemos los mejores títulos en libros sobre desarrollo personal, emprendimiento, finanzas y espiritualidad. Con el único propósito y objetivo de que logres desarrollarte al 100% como una persona exitosa.</p>
                 </div>
                 <div class="col-md-4">
-                  <a href="#" class="filled-button">Purchase Now</a>
+                  <a href="#" class="filled-button">Comprar ahora</a>
                 </div>
               </div>
             </div>
@@ -270,47 +205,4 @@ https://templatemo.com/tm-546-sixteen-clothing
       </div>
     </div>
 
-    
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>Copyright &copy; 2020 Sixteen Clothing Co., Ltd.
-            
-            - Design: <a rel="nofollow noopener" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'core/vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'core/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-
-    <!-- Additional Scripts -->
-    <script src="{% static 'core/js/custom.js' %}"></script>
-    <script src="{% static 'core/js/owl.js' %}"></script>
-    <script src="{% static 'core/js/slick.js' %}"></script>
-    <script src="{% static 'core/js/isotope.js' %}"></script>
-    <script src="{% static 'core/js/accordions.js' %}"></script>
-
-
-    <script language = "text/Javascript"> 
-      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
-      function clearField(t){                   //declaring the array outside of the
-      if(! cleared[t.id]){                      // function makes it static and global
-          cleared[t.id] = 1;  // you could use true and false, but that's more typing
-          t.value='';         // with more chance of typos
-          t.style.color='#fff';
-          }
-      }
-    </script>
-
-
-  </body>
-
-</html>
+{% endblock content %}
