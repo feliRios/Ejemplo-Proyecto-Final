@@ -8,3 +8,7 @@ def inicio(request):
 
 def tienda(request):
     return render(request, 'core/tienda.html')
+
+
+def generos(request):
+    return render(request, 'core/generos.html')
