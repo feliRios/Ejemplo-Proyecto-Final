@@ -12,3 +12,7 @@ def tienda(request):
 
 def generos(request):
     return render(request, 'core/generos.html')
+
+
+def about(request):
+    return render(request, 'core/about.html')
