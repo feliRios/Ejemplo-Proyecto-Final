@@ -197,6 +197,12 @@ a.filled-button:hover {
 
 .page-heading-login {
 	padding: 140px 0px 80px 0px;
+	background-image: url(../images/login-heading.jpg)
+}
+
+.page-heading-register {
+	padding: 140px 0px 80px 0px;
+	background-image: url(../images/register-heading.jpg)
 }
 
 .page-heading .text-content h4 {
