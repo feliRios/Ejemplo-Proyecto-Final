@@ -16,3 +16,11 @@ def generos(request):
 
 def about(request):
     return render(request, 'core/about.html')
+
+
+def login_view(request):
+    return render(request, 'core/login.html')
+
+
+def register_view(request):
+    return render(request, 'core/register.html')
