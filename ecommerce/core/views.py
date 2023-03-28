@@ -4,3 +4,7 @@ from django.shortcuts import render
 
 def inicio(request):
     return render(request, 'core/inicio.html')
+
+
+def tienda(request):
+    return render(request, 'core/tienda.html')

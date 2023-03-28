@@ -17,6 +17,8 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Boton para scrollear a inicio */
+
 .boton-scroll {
 	position: fixed;
 	bottom: 20px;
@@ -37,8 +39,6 @@ html {
 	background-color: #c40000;
 }
 
-
-
 @media (max-width: 768px) {
 	.boton-scroll {
 		bottom: 10px;
@@ -48,6 +48,55 @@ html {
 		line-height: 40px;
 		font-size: 16px;
 	}
+}
+
+/* Boton para publicar producto */
+
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 25vh;
+}
+
+.boton-rojo {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin-top: 40px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.boton-rojo:hover {
+	background-color: darkred;
+}
+
+.boton-rojo a {
+	color: white;
+}
+
+/* Formularios de tienda */
+
+.form-container {
+	overflow: hidden;
+	/* Clearfix para asegurarse de que el contenedor cubra ambos formularios */
+}
+
+.left-form {
+	float: left;
+	/* Hace que el formulario se coloque a la izquierda */
+	width: 50%;
+	/* Establece el ancho del formulario en un 50% del contenedor */
+}
+
+.right-form {
+	float: right;
+	/* Hace que el formulario se coloque a la derecha */
+	width: 50%;
+	/* Establece el ancho del formulario en un 50% del contenedor */
 }
 
 p {
@@ -80,7 +129,7 @@ ul.social-icons li:last-child {
 }
 
 ul.social-icons li a {
-	width: 50px;
+	width: 200px;
 	height: 50px;
 	display: inline-block;
 	line-height: 50px;
@@ -355,7 +404,7 @@ header .navbar {
 }
 
 .banner-item-01 {
-	padding: 300px 0px;
+	padding: 225px 0px;
 	background-image: url(../images/slide_01.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -442,7 +491,7 @@ header .navbar {
 /* Latest Produtcs */
 
 .latest-products {
-	margin-top: 100px;
+	margin-top: 60px;
 }
 
 .latest-products .section-heading a {
@@ -471,6 +520,12 @@ header .navbar {
 
 .product-item .down-content h4 {
 	font-size: 17px;
+	color: #1a6692;
+	margin-bottom: 10px;
+}
+
+.product-item .down-content h5 {
+	font-size: 13px;
 	color: #1a6692;
 	margin-bottom: 20px;
 }
